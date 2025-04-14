@@ -5,3 +5,12 @@
 .navbar-nav{
     background-color: #A31117;
 }
+
+.nav-link{
+    color: whitesmoke;
+}
+
+.navbar-brand{
+    background-color: #A31117;
+    color: whitesmoke;
+}
