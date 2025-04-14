@@ -1,26 +1,18 @@
 {
-  "name": "sistema-loja-nodejs",
+  "name": "sistam-loja-nodejs",
   "version": "1.0.0",
-  "description": "Essa é a atividade avaliativa da matéria de Desenvolvimento Web 2 (DW2), utilizando NodeJS, Express e Nodemon!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Psyj1/sistema-loja-nodejs.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon index.js"
   },
   "author": "Paulo",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Psyj1/sistema-loja-nodejs/issues"
-  },
-  "homepage": "https://github.com/Psyj1/sistema-loja-nodejs#readme",
+  "description": "",
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^5.1.0"
-  },
-  "devDependencies": {
+    "express": "^4.21.2",
     "nodemon": "^3.1.9"
-  }
+  }, 
+  "type" : "module"
 }

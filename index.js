@@ -3,14 +3,14 @@ import express from "express";
 
 const app = express();
 
-import ProdutosController from "./controllers/ProdutosController.js";
+import ControllerProdutos from "./controller/ControllerProducts.js";
 
 app.set("view engine", "ejs");
 
 
 app.use(express.static("public"));
 
-app.use("/", ProdutosController);
+app.use("/", ControllerProdutos);
 
 app.get("/", (req, res) => {
   res.render("index");
