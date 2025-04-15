@@ -20,7 +20,7 @@
                     <!--Chamando o Array de objetos-->
                     <% produtos.forEach(produto => { %>
                     <tr>
-                        <td><img src="/images/<%= produto.imagem%>" alt="<%=produto.nome%>"></td>    
+                        <td><img src="/images/<%= produto.imagem%>" alt="<%=produto.nome%>" class="image-size"></td>    
                         <td><%= produto.nome %></td>
                         <td><%= produto.preco.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) %></td>
                         <td><%= produto.categoria %></td>
