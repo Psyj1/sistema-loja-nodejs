@@ -4,9 +4,23 @@ import express from "express";
 const app = express();
 
 import ControllerProdutos from "./controller/ControllerProducts.js";
-import ControllerPedidos from "./controller/ControllerPedidos.js";
-import ControllerClientes from "./controller/ControllerClientes.js";
+import ControllerPedidos from "./controller/Cursos.js";
+import ControllerClientes from "./controller/Clientes.js";
 
+
+import connection from "./config/sequelize-config.js";
+
+connection.authenticate().then(() =>{
+  console.log("Conexão com o banco de dados feita com sucesso!")
+}).catch((error) => {
+  console.log(error)
+})
+
+connection.query(`CREATE DATABASE IF NOT EXISTS seuZe;`).then(() => {
+  console.log("O banco de dados está criado.");
+}).catch((error) => {
+  console.log(error);
+})
 
 app.set("view engine", "ejs");
 
