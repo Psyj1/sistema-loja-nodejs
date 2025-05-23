@@ -1,12 +1,10 @@
-
 import express from "express";
 
 const app = express();
 
-import ControllerProdutos from "./controller/ControllerProducts.js";
-import ControllerPedidos from "./controller/Cursos.js";
-import ControllerClientes from "./controller/Clientes.js";
-
+import ProdutosController from "./controller/ProductsController.js";
+import PedidosController from "./controller/PedidosController.js";
+import ClientesController from "./controller/ClientesController.js";
 
 import connection from "./config/sequelize-config.js";
 
@@ -27,9 +25,9 @@ app.set("view engine", "ejs");
 
 app.use(express.static("public"));
 
-app.use("/", ControllerProdutos);
-app.use("/", ControllerPedidos);
-app.use("/", ControllerClientes);
+app.use("/", ProdutosController);
+app.use("/", PedidosController);
+app.use("/", ClientesController);
 
 app.get("/", (req, res) => {
   res.render("index");

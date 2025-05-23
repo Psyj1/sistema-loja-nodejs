@@ -4,9 +4,8 @@ const connection = new Sequelize({
     dialect: 'mysql',
     host: 'localhost',
     username: 'root',
-    password: 'admin',
-    //database: 'seuZe'
-    timezone: "-03:00"
+    password: '',
+    database: 'seuze'
 })
 
 export default connection
